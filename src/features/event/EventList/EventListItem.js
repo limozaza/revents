@@ -15,7 +15,7 @@ class EventListItem extends Component{
                         <Item.Content>
                             <Item.Header as="a">{this.props.event.title}</Item.Header>
                             <Item.Description>
-                                Hosted by <a>{this.props.event.hostByL}</a>
+                                Hosted by <a>{this.props.event.hostedBy}</a>
                             </Item.Description>
                         </Item.Content>
                         </Item>
@@ -39,7 +39,7 @@ class EventListItem extends Component{
         </Segment>
         <Segment clearing>
             <span>{this.props.event.description}</span>
-            <Button as="a" color="teal" floated="right" content="View" />
+            <Button as="a" color="teal" floated="right" content="View" onClick={this.props.onEventEdit(this.props.event)}/>
         </Segment>
       </Segment.Group>
         );
