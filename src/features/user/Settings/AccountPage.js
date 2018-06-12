@@ -2,7 +2,7 @@ import React from 'react';
 const AccountPage = () => {
     return (
         <div>
-            <h1>AccountPage Page</h1>
+            <h1>Account Page</h1>
         </div>
     );
 }
